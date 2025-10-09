@@ -1,0 +1,100 @@
+# .github/workflows/deploy.yml
+name: Build and Deploy Hugo Site to Pages
+
+on:
+  # 当推送到 `source` 分支时触发
+  push:
+    branches:
+      - source
+  # 允许手动从 Actions 页面触发
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一个并发部署，取消正在进行的旧部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: 0.124.1 # 锁定 Hugo 版本
+  GO_VERSION: 1.22     # 锁定 Go 版本
+
+jobs:
+  # ==================================
+  #         构建任务 (Build Job)
+  # ==================================
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive # 拉取主题
+          fetch-depth: 0      # 拉取完整历史
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # 我们的自定义步骤：转换 Markdown
+      - name: Convert Obsidian links for Hugo
+        run: go run ./converter/main.go
+
+      # 使用 peaceiris/actions-hugo 来简化安装和 SASS 支持
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Restore Hugo cache
+        uses: actions/cache/restore@v4
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
+      - name: Build Hugo site
+        run: |
+          hugo --gc --minify \
+            --contentDir temp_hugo_content \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --cacheDir /tmp/hugo_cache
+
+      - name: Save Hugo cache
+        uses: actions/cache/save@v4
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ github.sha }}
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 将 Hugo 生成的 public 目录上传为产物
+          path: ./public
+
+  # ==================================
+  #         部署任务 (Deploy Job)
+  # ==================================
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build # 依赖于 build 任务成功
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

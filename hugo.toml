@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://meizigz.github.io/"
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写
@@ -50,3 +50,8 @@ theme = "DoIt"
   [markup.highlight]
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+# 缓存目录配置以配合github action
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
