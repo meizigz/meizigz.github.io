@@ -21,8 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HUGO_VERSION: 0.124.1 # 锁定 Hugo 版本
-  GO_VERSION: 1.22     # 锁定 Go 版本
+  HUGO_VERSION: 0.151.1 # 锁定 Hugo 版本
+  GO_VERSION: 1.25     # 锁定 Go 版本
 
 jobs:
   # ==================================
@@ -71,13 +71,6 @@ jobs:
           hugo --gc --minify \
             --contentDir temp_hugo_content \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --cacheDir /tmp/hugo_cache
-
-      - name: Save Hugo cache
-        uses: actions/cache/save@v4
-        with:
-          path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugo-${{ github.sha }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
