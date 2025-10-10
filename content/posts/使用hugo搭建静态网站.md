@@ -1,8 +1,10 @@
 ---
+categories:
+tags:
 draft: false
 title: 使用hugo搭建静态网站
 date: 2025-10-09T17:25:44+08:00
-updated: 2025-10-10T10:14:22+08:00
+updated: 2025-10-10T11:46:48+08:00
 ---
 ## 环境准备
 

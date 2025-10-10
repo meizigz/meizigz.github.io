@@ -1,8 +1,10 @@
 ---
+categories:
+tags:
 draft: false
 title: 使用github托管静态网站
 date: 2025-10-09T17:27:55+08:00
-updated: 2025-10-10T11:04:15+08:00
+updated: 2025-10-10T11:46:46+08:00
 ---
 远端创建repo，带个README，此时main分支被创建；  
 web操作：Settings -> Actions -> General -> 在 **Workflow permissions** 部分，确保切换到 `Read and write permissions` 并保存。  
@@ -25,6 +27,20 @@ git commit --allow-empty -m "chore: Trigger CI after service recovery"
 git submodule update --init --recursive
 
 git clone --recurse-submodules https://github.com/your-username/your-repo.git
+
+1. **进入仓库设置**:
+    
+    - 在你的 GitHub 仓库页面，点击 Settings。
+        
+2. **进入 Pages 设置**:
+    
+    - 在左侧菜单中，点击 Pages。
+        
+3. **修改部署源 (Source)**:
+    
+    - 在 Build and deployment 部分，你会看到 Source 当前被设置为 **Deploy from a branch**。
+        
+    - 点击下拉菜单，将其更改为 **GitHub Actions**。
 
 ## todo：
 
