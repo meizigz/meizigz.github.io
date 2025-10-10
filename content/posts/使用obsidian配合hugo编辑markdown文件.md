@@ -1,8 +1,14 @@
 ---
 draft: false
 date: 2025-10-09T17:26:46+08:00
-updated: 2025-10-10T10:14:24+08:00
+updated: 2025-10-10T11:43:19+08:00
 title: 使用obsidian配合hugo编辑markdown文件
+categories:
+  - 技术
+  - hugo
+tags:
+  - obsidian
+  - hugo
 ---
 仓库根目录`content`  
 新建笔记默认文件夹`posts`  
@@ -28,7 +34,6 @@ yaml：
 - 脚本转换链接
 
 go run converter\main.go
-
-hugo server --contentDir temp_hugo_content -D --disableFastRender
+hugo server --contentDir temp_hugo_content -D --disableFastRender -p 4000
 
 [[使用github托管静态网站]]
