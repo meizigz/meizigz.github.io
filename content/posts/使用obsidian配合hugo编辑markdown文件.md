@@ -1,7 +1,7 @@
 ---
-draft: true
+draft: false
 date: 2025-10-09T17:26:46+08:00
-updated: 2025-10-09T18:21:21+08:00
+updated: 2025-10-10T10:14:24+08:00
 title: 使用obsidian配合hugo编辑markdown文件
 ---
 仓库根目录`content`  
