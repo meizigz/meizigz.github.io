@@ -24,3 +24,10 @@ git switch source
 ```sh
 git commit --allow-empty -m "chore: Trigger CI"
 ```
+
+## 本地预览
+
+```
+# 切换到source分支
+preview.bat
+```
