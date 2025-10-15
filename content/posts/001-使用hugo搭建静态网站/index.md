@@ -1,10 +1,13 @@
 ---
-categories:
-tags:
-draft: false
 title: 使用hugo搭建静态网站
-date: 2025-10-09T17:25:44+08:00
-updated: 2025-10-10T11:46:48+08:00
+categories:
+  - 技术
+tags:
+  - 博客
+  - hugo
+draft: false
+date: 2025-10-09T17:24:44+08:00
+lastmod: 2025-10-15T12:13:58+08:00
 ---
 ## 环境准备
 
@@ -97,4 +100,5 @@ hugo new posts/first_post.md
 ```sh
 hugo server -D --disableFastRender # 构建（包含草稿）
 ```
+
 

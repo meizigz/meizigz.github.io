@@ -32,7 +32,7 @@
     },
     "insert-yaml-attributes": {
       "enabled": true,
-      "text-to-insert": "draft: true\ncategories:\ntags:"
+      "text-to-insert": "draft: true\ntitle:\ncategories:\ntags:"
     },
     "move-tags-to-yaml": {
       "enabled": false,
@@ -63,14 +63,14 @@
       "date-created-key": "date",
       "date-created-source-of-truth": "frontmatter",
       "date-modified": true,
-      "date-modified-key": "updated",
+      "date-modified-key": "lastmod",
       "date-modified-source-of-truth": "file system",
       "format": "YYYY-MM-DDTHH:mm:ssZ",
       "convert-to-utc": false,
       "update-on-file-contents-updated": "never"
     },
     "yaml-title": {
-      "enabled": true,
+      "enabled": false,
       "title-key": "title",
       "mode": "first-h1-or-filename-if-h1-missing"
     },
@@ -276,7 +276,9 @@
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
-  "foldersToIgnore": [],
+  "foldersToIgnore": [
+    "templates"
+  ],
   "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",

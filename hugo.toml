@@ -68,6 +68,11 @@ weight = 3
 # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
 noClasses = false
 
+# 支持html标签。虽然有安全隐患，但自己的md可控
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 # 缓存目录配置以配合github action
 [caches]
 

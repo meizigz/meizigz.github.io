@@ -1,5 +1,9 @@
 {
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "newFileFolderPath": "posts",
-  "spellcheck": false
+  "spellcheck": false,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest"
 }
