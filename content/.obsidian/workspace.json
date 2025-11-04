@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/003-使用obsidian配合hugo编辑markdown文件/index.md",
+                "file": "posts/004-通过阿里云oss实现文件中转/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -33,20 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "index"
-            }
-          },
-          {
-            "id": "4e138fe2840620e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/hugo_post_template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "hugo_post_template"
             }
           }
         ]
@@ -200,9 +186,11 @@
   },
   "active": "908ecd876d06dc6b",
   "lastOpenFiles": [
+    "posts/003-使用obsidian配合hugo编辑markdown文件/index.md",
+    "posts/004-通过阿里云oss实现文件中转",
+    "posts/004-通过阿里云oss实现文件中转/index.md",
     "posts/001-使用hugo搭建静态网站/index.md",
     "posts/002-使用github托管静态网站/index.md",
-    "posts/003-使用obsidian配合hugo编辑markdown文件/index.md",
     "posts/003-使用obsidian配合hugo编辑markdown文件/main.zip",
     "posts/003-使用obsidian配合hugo编辑markdown文件/dianchi.jpg",
     "posts/003-使用obsidian配合hugo编辑markdown文件/main.go",
@@ -219,7 +207,6 @@
     "content/posts",
     "content",
     "posts/000-abc/index.md",
-    "scripts/processHugoTitle.js",
     "templates/t1.md",
     "posts/使用hugo搭建静态网站/大猫猫.jpg",
     "posts/使用hugo搭建静态网站/Pasted image 20251010172014.png",
