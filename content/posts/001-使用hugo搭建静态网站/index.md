@@ -3,11 +3,10 @@ title: 使用hugo搭建静态网站
 categories:
   - 技术
 tags:
-  - 博客
   - hugo
 draft: false
 date: 2025-10-09T17:24:44+08:00
-lastmod: 2025-10-15T12:13:58+08:00
+lastmod: 2025-11-04T10:39:10+08:00
 ---
 ## 环境准备
 

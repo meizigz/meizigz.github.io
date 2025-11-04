@@ -1,10 +1,12 @@
 ---
 title: 通过阿里云oss实现文件中转
 date: 2025-10-28T17:04:28+08:00
-lastmod: 2025-11-04T10:35:53+08:00
+lastmod: 2025-11-04T10:38:22+08:00
 draft: false
 categories:
 tags:
+  - 阿里云
+  - OSS
 ---
 ## 创建bucket
 
