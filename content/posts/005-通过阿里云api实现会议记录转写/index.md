@@ -1,8 +1,8 @@
 ---
-title: "通过阿里云api实现会议记录转写"
+title: 通过阿里云api实现会议记录转写
 date: 2025-11-04T10:14:16+08:00
-lastmod: 2025-11-04T10:34:38+08:00
-draft: true
+lastmod: 2025-11-04T10:35:51+08:00
+draft: false
 categories:
 tags:
 ---

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/005-通过阿里云api实现会议记录转写/index.md",
+                "file": "posts/004-通过阿里云oss实现文件中转/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -186,9 +186,9 @@
   },
   "active": "908ecd876d06dc6b",
   "lastOpenFiles": [
+    "posts/005-通过阿里云api实现会议记录转写/index.md",
     "posts/004-通过阿里云oss实现文件中转/index.md",
     "posts/005-通过阿里云api实现会议记录转写",
-    "posts/005-通过阿里云api实现会议记录转写/index.md",
     "posts/003-使用obsidian配合hugo编辑markdown文件/index.md",
     "posts/004-通过阿里云oss实现文件中转",
     "posts/001-使用hugo搭建静态网站/index.md",
