@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/002-使用github托管静态网站/index.md",
+                "file": "posts/007-自建开发服务器/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,7 +35,8 @@
               "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,15 +185,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "908ecd876d06dc6b",
+  "active": "de9bcdf8ec99709d",
   "lastOpenFiles": [
+    "posts/006-01-godot学习记录1/index.md",
+    "posts/007-自建开发服务器",
+    "posts/007-自建开发服务器/index.md",
+    "posts/003-使用obsidian配合hugo编辑markdown文件/index.md",
+    "posts/006-01-godot学习记录1",
+    "posts/002-使用github托管静态网站/index.md",
     "posts/005-通过阿里云api实现会议记录转写/index.md",
     "posts/004-通过阿里云oss实现文件中转/index.md",
     "posts/005-通过阿里云api实现会议记录转写",
-    "posts/003-使用obsidian配合hugo编辑markdown文件/index.md",
     "posts/004-通过阿里云oss实现文件中转",
     "posts/001-使用hugo搭建静态网站/index.md",
-    "posts/002-使用github托管静态网站/index.md",
     "posts/003-使用obsidian配合hugo编辑markdown文件/main.zip",
     "posts/003-使用obsidian配合hugo编辑markdown文件/dianchi.jpg",
     "posts/003-使用obsidian配合hugo编辑markdown文件/main.go",
@@ -205,8 +210,6 @@
     "posts/008-fawjefia/index.md",
     "posts/008-fawjefia",
     "content/posts/002-bacdfw/index.md",
-    "content/posts/002-bacdfw",
-    "content/posts",
     "posts/000-abc/index.md",
     "templates/t1.md",
     "posts/使用hugo搭建静态网站/大猫猫.jpg",
